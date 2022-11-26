@@ -11,21 +11,27 @@
   padding: 0 !important;
 }
 
+.container-fluid {
+  justify-content: space-between !important;
+}
+
 .container-fluid,
 .container-flex,
 .container {
   display: flex !important;
-  justify-content: space-between !important;
   align-items: center !important;
   max-width: 1180px !important;
   margin: 0 auto !important;
   padding: 0 17px !important;
 }
 
-.navbar-brand,
 .navbar-nav,
 .header-info__p {
   margin: 0px auto !important;
+}
+
+.navbar-brand {
+  margin: 0px !important;
 }
 
 .SmartCode_img {
@@ -185,11 +191,70 @@
   flex-grow: 1 !important;
 }
 
-.section-info__ul {
+.accordion {
   display: flex !important;
   flex-direction: column !important;
   row-gap: 20px !important;
-  /* list-style: none !important; */
+}
+
+.accordion-item {
+  background-color: #fff !important;
+  box-shadow: 2px 2px 18px rgb(0 0 0 / 5%) !important;
+  border-radius: 27px !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  font-weight: 200 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.accordion-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  padding: 15px 25px !important;
+}
+
+.accordion-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.accordion-icon {
+  margin-right: 15px !important;
+  color: #f3b01b !important;
+  font-size: 1.5em !important;
+  font-weight: 400 !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.accordion-p {
+  margin-bottom: 0 !important;
+  line-height: 25px !important;
+}
+
+.accordion-span {
+  font-weight: 800 !important;
+}
+
+.accordion-collapse {
+  border-top: 1px solid #f3f3f3 !important;
+  padding: 20px 25px 25px !important;
+}
+
+.accordion-body {
+  line-height: 25px !important;
+}
+
+/* ul-@ sra verev@ piti lini */
+.section-foot {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 50px !important;
 }
 
 @media (max-width: 1024px) {
@@ -242,5 +307,12 @@
 
   .section-title__text {
     font-size: 14px !important;
+  }
+
+  .section-box {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center !important;
+    row-gap: 50px !important;
   }
 }
