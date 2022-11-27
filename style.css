@@ -11,15 +11,14 @@
   padding: 0 !important;
 }
 
-.container-fluid {
-  justify-content: space-between !important;
+.container-flex {
+  display: flex !important;
+  align-items: center !important;
 }
 
 .container-fluid,
 .container-flex,
 .container {
-  display: flex !important;
-  align-items: center !important;
   max-width: 1180px !important;
   margin: 0 auto !important;
   padding: 0 17px !important;
@@ -70,7 +69,6 @@
   background-color: #f3b01b !important;
   margin: 18px auto 0 !important;
 }
-/*  */
 
 .btn {
   background-color: #f3b01b !important;
@@ -106,7 +104,8 @@
   line-height: 42px !important;
 }
 
-.header-info__span {
+.header-info__span,
+.section-title__span {
   font-weight: 400 !important;
 }
 
@@ -139,14 +138,9 @@
   padding: 80px 0 !important;
 }
 
-.container-features {
-  flex-direction: column !important;
-}
-
 .section-title {
   text-align: center !important;
   margin-bottom: 80px !important;
-  width: 100% !important;
 }
 
 .section-title__h2 {
@@ -154,10 +148,6 @@
   font-weight: 200 !important;
   margin-bottom: 10px !important;
   line-height: 32px !important;
-}
-
-.section-title__span {
-  font-weight: 400 !important;
 }
 
 .section-title__text {
@@ -185,6 +175,7 @@
 
 .section-box__img {
   width: 450px !important;
+  max-width: 100% !important;
 }
 
 .section-info {
@@ -200,12 +191,13 @@
 .accordion-item {
   background-color: #fff !important;
   box-shadow: 2px 2px 18px rgb(0 0 0 / 5%) !important;
-  border-radius: 27px !important;
   font-size: 16px !important;
   line-height: 26px !important;
   font-weight: 200 !important;
   display: flex !important;
   flex-direction: column !important;
+  border-radius: 27px !important;
+  border: 1px solid #dee2e6 !important;
 }
 
 .accordion-header {
@@ -218,16 +210,14 @@
 }
 
 .accordion-button {
-  display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
+  padding: 0 !important;
 }
 
 .accordion-icon {
   margin-right: 15px !important;
   color: #f3b01b !important;
-  font-size: 1.5em !important;
-  font-weight: 400 !important;
   width: 24px !important;
   height: 24px !important;
 }
@@ -248,9 +238,9 @@
 
 .accordion-body {
   line-height: 25px !important;
+  font-weight: 400 !important;
 }
 
-/* ul-@ sra verev@ piti lini */
 .section-foot {
   display: flex !important;
   justify-content: center !important;
@@ -314,5 +304,25 @@
     justify-content: center !important;
     text-align: center !important;
     row-gap: 50px !important;
+  }
+
+  .section-box__img {
+    width: 70% !important;
+  }
+
+  .accordion-header {
+    padding: 15px 18px !important;
+  }
+
+  .accordion-collapse {
+    text-align: left !important;
+  }
+
+  .accordion-body {
+    padding: 0 !important;
+  }
+
+  .section-foot {
+    margin-top: 40px !important;
   }
 }
