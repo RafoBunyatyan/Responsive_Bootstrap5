@@ -31,8 +31,12 @@
   margin: 0px auto !important;
 }
 
-.header-info__p {
-  opacity: 0.7 !important;
+.header-info__p, 
+.section-title__text, 
+.accordion-opacity, 
+.accordion-body, 
+.section-info__flex {
+  opacity: 0.8 !important;
 }
 
 .navbar-brand {
@@ -112,7 +116,7 @@
 
 .header-info__span,
 .section-title__span {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 .btn-size {
@@ -140,7 +144,7 @@
   width: 500px !important;
 }
 
-.features {
+.features, .section-about {
   padding: 80px 0 !important;
 }
 
@@ -160,8 +164,7 @@
   margin: 0 auto !important;
   line-height: 24px !important;
   max-width: 600px !important;
-  opacity: 0.7 !important;
-}
+ }
 
 .section-title__text:after {
   content: "" !important;
@@ -238,11 +241,6 @@
   font-weight: 600 !important;
 }
 
-.accordion-opacity,
-.accordion-body {
-  opacity: 0.7 !important;
-}
-
 .accordion-collapse {
   border-top: 1px solid #f3f3f3 !important;
   padding: 20px 25px 25px !important;
@@ -259,6 +257,23 @@
   margin-top: 50px !important;
 }
 
+.section-about__title {
+	text-align: center !important;
+  margin-bottom: 50px !important;
+}
+
+.section-info__flex {
+	display: flex !important;
+	flex-direction: column !important;
+	row-gap: 20px !important;
+	line-height: 25px !important;
+}
+
+.section-info__text {
+	margin: 0 !important;
+	font-size: 18px !important;
+}
+
 @media (max-width: 1024px) {
   .container-fluid {
     height: 78px !important;
@@ -269,7 +284,8 @@
   }
 
   .header-main,
-  .features {
+  .features, 
+	.section-about {
     padding: 50px 0 !important;
   }
 
@@ -314,7 +330,6 @@
   .section-box {
     flex-wrap: wrap !important;
     justify-content: center !important;
-    text-align: center !important;
     row-gap: 50px !important;
   }
 
