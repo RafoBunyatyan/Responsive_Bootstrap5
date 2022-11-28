@@ -346,6 +346,13 @@
   margin-right: 5px !important;
 }
 
+.section-form {
+	background-image: url('./assets/images/map-bckgrnd-1.jpg') !important;
+    background-repeat: no-repeat  !important;
+    background-size: contain  !important;
+		padding: 80px 0 !important;
+}
+
 @media (max-width: 1024px) {
   .container-fluid {
     height: 78px !important;
