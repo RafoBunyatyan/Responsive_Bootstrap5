@@ -13,10 +13,10 @@
   letter-spacing: 1px !important;
   font-size: 14px !important;
   padding: 0 !important;
-	position: sticky !important;
+	/* position: sticky !important;
 	top: 0 !important;
 	z-index: 99 !important;
-	box-shadow: 0 8px 16px rgb(0 0 0 / 8%) !important;
+	box-shadow: 0 8px 16px rgb(0 0 0 / 8%) !important; */
 }
 
 .container-flex {
@@ -100,6 +100,10 @@
 .btn:hover {
   color: #000 !important;
   background-color: #fff !important;
+}
+
+.btn-padding {
+	padding: 8px 25px !important;
 }
 
 .header-main {
@@ -292,7 +296,7 @@
 
 .footer-container {
 	display: flex !important;
-	justify-content: space-evenly !important;
+	justify-content: space-around !important;
 	column-gap: 50px !important;
 	padding: 70px 0 !important;
 }
@@ -345,13 +349,14 @@
 	color: var(--main) !important;
   margin-right: 5px !important;
 }
-/* chaper@ petq e dzvi */
+
 .section-form {
 	background-image: url('./assets/images/map-bckgrnd-1.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-	padding-bottom: 20px !important;
-	margin-top: 50px !important;
+	background-position: center !important;
+	padding-bottom: 30px !important;
+	margin-top: 60px !important;
 }
 
 .container-form {
@@ -363,7 +368,7 @@
 }
 
 .container-wrap {
-	padding: 60px 0px 100px 0px !important;
+	padding: 80px 0 100px !important;
 }
 
 .container-title {
@@ -403,11 +408,16 @@
 }
 
 .container-wrap__text-padding {
-	padding: 50px 0px 10px 0px !important; 
+	padding: 25px 0px  !important; 
 }
 
 .row, .btn-container  {
 	margin-bottom: 18px !important;
+}
+
+.form-row {
+	display: flex  !important;
+  flex-wrap: wrap  !important;
 }
 
 .form-check {
@@ -513,6 +523,50 @@
 
 	.footer-social__title:after {
 		margin: 15px auto 10px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-form {
+		padding-bottom: 0 !important;
+		margin-top: 0 !important;
+		background-position: left !important
+	}
+
+	.container-form {
+		flex-direction: column !important;
+	}
+
+	.container-column {
+		width: 100% !important;
+	}
+
+	.container-wrap {
+		padding: 40px 0 0 !important;
+	}
+
+	.container-title__about {
+		padding: 0px 20px !important;
+	}
+
+	.container-wrap__column {
+		padding: 0% 20px !important;
+	}
+
+	.container-title__project {
+		padding: 30px 30px 30px 20px !important;
+	}
+
+	.container-wrap__text {
+		margin-bottom: 35px !important;
+	}
+
+	.container-wrap__text-padding {
+		padding: 0px  !important; 
+	}
+
+	.form-container {
+		padding-bottom: 40px !important;
 	}
 }
 
