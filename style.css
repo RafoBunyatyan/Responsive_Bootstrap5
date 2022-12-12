@@ -58,6 +58,10 @@
 	width: 0 !important;
 }
 
+.btn-weigth {
+	font-weight: 600 !important;
+}
+
 .btn {
 	background-color: var(--main) !important;
 	border: 1px solid var(--main) !important;
@@ -99,7 +103,7 @@
 
 .header-info__span,
 .section-title__span {
-	font-weight: 500 !important;
+	font-weight: 400 !important;
 }
 
 .header-info__p,
@@ -401,6 +405,7 @@
 .footer-social__href {
 	text-decoration: none !important;
 	color: #000 !important;
+	line-height: 20px !important;
 }
 
 .footer-href {
